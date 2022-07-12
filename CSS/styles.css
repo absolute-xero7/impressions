@@ -2,120 +2,276 @@ body {
   background-color: #363062;
   color: white;
   text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+div.row {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 /*----------------------------------------NAVBAR-----------------------------------------*/
 
-.site-header {
-  /* background-color: #4D4C7D; */
-  background-color: #304362;
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-  font-weight: 400;
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* change the background color */
+.navbar-custom {
+  background-color: #685E95;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: #fff;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: #185189;
+  border-radius: 5px;
+}
+
+.navbar-nav li > a:focus {
+  background-color: #827397;
+  border-radius: 5px;
+}
+
+/* .navbar-nav li.active > a {
+	background-color: #000000;
+	color: #fff;
+  border-radius: 5px;
+} */
+
+.navbar {
+  -webkit-box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.75);
+}
+
+.navbar-nav > li{
+  padding-left:5vw;
+  padding-right:5vw;
+}
+
+
+  
+/*++++++++++++++++++++++++++Small Devices++++++++++++++++++++++++++++++*/
+
+@media (min-width: 544px) {  
   
 }
-.site-header a {
-  color: #fff;
-  transition: color .15s ease-in-out;
-  text-decoration: none;
-  margin: auto;
-  font-weight: 400;
-}
-.site-header a:hover {
-  /* color: #E9D5DA; */
-  color: #5c6230;
-  text-decoration: underline;
-  font-weight: 400;
-}
-.site-header a:visited:active {
-  text-decoration: underline;
-}
 
-.container {
-  display: block;
+
+/*---------------------------------------INTRO-SCREEN----------------------------------*/
+
+.intro {
+  background: #5c6230;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 4;
+  overflow: hidden
 }
 
+h1 .box {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  background: wheat;
+  height: 1vw;
+  /* z-index: -1; */
+  width: 100px;
+}
 
+.intro-text {
+  color: #00B6BA;
+  font-size: 3em;
+  position: relative;
+  z-index: 2;
+}
 
+.hide-intro {
+  background-color: #5c6230;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.rule {
+  width: 100vw;
+  position: relative;
+  z-index: 3;
+  opacity: 100;
+}
 
 
 
 /*-------------------------------------HOME--------------------------------------------*/
 
-.home {
-  justify-content: center;
-  /* position: relative; */
-  margin-bottom: 40px;
-}
+  .home {
+    justify-content: center;
+    
+    margin-bottom: 40px;
+  }
 
-.home-title {
-  text-align: center;
-  position: relative;
-  top: 50px;
-  margin-bottom: 100px;
-}
+  .hide {
+    position: relative;
+    visibility: hidden;
+  }
+  .home-title {
+    text-align: center;
+    position: relative;
+    top: 50px;
+    margin-bottom: 100px;
+  }
 
-#main-photo {
-  width: 110px;
-  height: 110px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: black;
-  margin: 0 auto;
-  position: relative;
-  top: 100px;
-  margin-bottom: 50px;
-}
+  #main-photo {
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 
 
-.name {
-  font-size: 6em;
-  font-weight: 90;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 50px;
-}
+  .name {
+    font-size: 8rem;
+    font-weight: 90;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+    position: relative;
+    bottom: 50px;
+  }
 
-.tagline {
-  font-size: 2.5em;
-  font-weight: 500;
-  margin-top: 0px;
-  position: relative;
-  top: 20px;
-}
+  .tagline {
+    font-size: 2.3vw;
+    font-weight: 500;
+    margin-top: 0px;
+    position: relative;
+    top: 20px;
+  }
 
-.description {
-  text-align: center;
-  position: relative;
+  .description {
+    text-align: center;
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+    font-size: 1.5vw;
+    top: 200px;
+  }
+
   
-  margin: 0 auto;
-  font-size: 2em;
-  top: 200px;
-  
+/*++++++++++++++++++++++++++Small Devices++++++++++++++++++++++++++++++*/
+
+@media (min-width: 300px) {  
+  .name {
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+
+  .description {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+    font-size: 1.5rem;
+    top: 0px;
+  }
+
+}
+
+/*++++++++++++++++++++++++++Large Devices++++++++++++++++++++++++++++++*/
+
+@media (min-width: 992px) {
+  .name {
+    font-size: 7rem;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+  }
+
+  .tagline {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 0px;
+    position: relative;
+    top: 20px;
+  }
+
+  .description {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    width: 30%;
+    font-size: 1.5rem;
+    top: 100px;
+  }
 }
 
 /*-----------------------------------CATEGORIES-------------------------------------------*/
 
-.category {
-  margin-top: -400px;
- 
- 
+li {
+  font-size: 2rem;
 }
+
+.category {
+  margin-top: -35vh;
+  text-align: center;
+}
+.category-item {
+  margin-bottom: 3.5rem;
+}
+
 .category-title {
   font-family: 'Finlandica', sans-serif;
-  font-size: 5em;
+  font-size: 5vw;
   font-weight: 400;
+  color: #00B6BA;
 }
 
 .category-description {
-  font-size: 2em;
+  font-size: 1.6vw;
   font-weight: 100;
 }
 
-.category-preview {
-  list-style: none;
+ul.category-preview {
+  list-style-image: url("/images/gear.png");
+  text-align: center;
+  list-style-position: inside;
+}
 
+
+.logos {
+  text-align: left;
 }
 
 .skills-align {
@@ -127,6 +283,49 @@ hr {
   width: 30%;
   border: 2px solid red;
 }
+
+/*++++++++++++++++++++++++++Small Devices++++++++++++++++++++++++++++++*/
+
+@media (min-width: 300px) {  
+  .category {
+    margin-top: -36rem;
+  }
+
+  .category-title {
+    font-family: 'Finlandica', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-top: 6rem;
+  }
+  
+  .category-description {
+    font-size: 1.3rem;
+    font-weight: 100;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+}
+
+/*++++++++++++++++++++++++++Large Devices++++++++++++++++++++++++++++++*/
+
+@media (min-width: 992px) {
+  .category {
+    margin-top: -35rem;
+  }
+
+  .category-title {
+    font-family: 'Finlandica', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+  }
+  
+  .category-description {
+    font-size: 1.6vw;
+    font-weight: 100;
+  }
+}
+
 
 
 /*---------------------------------BACKGROUND-------------------------------------------*/
@@ -214,7 +413,7 @@ hr {
   animation-delay: 1000ms;
 }
 .star:nth-child(2) {
-  top: calc(50% - -55px);
+  top: calc(50% - -4px);
   left: calc(50% - -30px);
   -webkit-animation-delay: 5000ms;
   animation-delay: 5000ms;
@@ -490,8 +689,8 @@ for shooting effect */
   animation-delay: 7000ms;
 }
 .star1:nth-child(8) {
-  top: calc(50% - -119px);
-  left: calc(50% - 43px);
+  top: calc(50% - -150px);
+  left: calc(50% - 200px);
   -webkit-animation-delay: 4000ms;
   animation-delay: 4000ms;
 }

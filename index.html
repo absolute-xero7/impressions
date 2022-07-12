@@ -16,197 +16,270 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Finlandica&family=Montserrat&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   
-  <header class="shadow p-3 mb-5 site-header sticky-top py-1">
-    <nav id="navbar" class="container d-flex flex-column flex-md-row justify-content-between fs-5">
-      <a class="nav-link py-2 d-none d-md-inline-block" href="#scrollspyhome"><strong>Home</strong></a>
-      <a class="nav-link py-2 d-none d-md-inline-block" href="#scrollspyskills"><strong>Skills</strong></a>
-      <a class="nav-link py-2 d-none d-md-inline-block" href="#"><strong>Education</strong></a>
-      <a class="nav-link py-2 d-none d-md-inline-block" href="#"><strong>Enterprise</strong></a>
-      <a class="nav-link py-2 d-none d-md-inline-block" href="#"><strong>About</strong></a>
-      <a class="nav-link py-2 d-none d-md-inline-block" href="#">Pricing</a>
-    </nav>
-  </header>
-
-  
-  <div class="row home">
-    <div class="col-12">
-      <div class="home-title">
-        <h1 class="name">PRAHLAD RANJIT</h1>
-        <h2 class="tagline">THE {mis}ADVENTURES OF A NERD</h2>
-      </div>
-    </div
-
-    <div class="row">
-      <div id="main-photo">
-        <img src="images/creeper.png" alt="Prahlad Ranjit">
+  <nav id="navbar" class="navbar fixed-top navbar-custom navbar-expand-sm">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link py-1 d-none d-md-inline-block" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-1 d-none d-md-inline-block" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-1 d-none d-md-inline-block" href="#">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-1 d-none d-md-inline-block" href="#">Projects</a>
+          </li>
+        </ul>
       </div>
     </div>
-      
-    <div class="row justify-content-center">
-      <div class="col-4">
-        <div class="description">
-          <p>I'm on a journey to learn the spells to manipulate the foundation of the modern world, computers.</p>
-          <p>I want to make complicated things simple and easy to understand for everyone.</p>
-        </div>
-      </div>  
-    </div>  
-  </div>
+  </nav>
+
+
   
-    <div class="background"> 
-      <div class="sky">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-      </div>
-      <div class="sky">
-        <div class="star1"></div>
-        <div class="star1"></div>
-        <div class="star1"></div>
-        <div class="star1"></div>
-        <div class="star1"></div>
-        <div class="star1"></div>
-        <div class="star1"></div>
-        <div class="star1"></div>
-        <div class="star1"></div>
-      </div>
-    </div>  
-    
-      
-  <div class="row category">
-    <div class="col-12">
-      <a class="skills-align" id="scrollspyskills">skills</a>
-      <br>
-      <br>
-      <br>
-      <section class="category-section">
-        <header class="category-header">
-          <h1 class="category-title">
-            Skills
-          </h1>
-          <br>
-          <hr>
-          <br>
-          <p class="category-description">
-            Things I can do to some degree of success.
-          </p>
-          <br>
-        </header
+  <div>
+    <div class="row">
+      <div class="col-12">
+        
+        
+          <div id="home" class="row home justify-content-center">
+            
+            <div class="home-title">
+              <p class="hide">hi</p>
+              <br>
+        <br>
+              
+              <h1 class="name">PRAHLAD RANJIT</h1>
+              <h2 class="tagline">THE {mis}ADVENTURES OF A NERD</h2>
+            </div>
 
-        <ul class="category-preview">
-          <li>
-            <a>Coding</a>
-          </li>
-          <li>
-            <a>Web Design</a>
-            <img src="images/html-5.png">
-            <img src="images/css3.png">
-            <img src="images/bootstrap.png">
-            <img src="images/javascript.png">
-            <img src="images/node-js.png">
-            <img src="images/jquery.png">
-            <img src="images/rest-api.png">
-            <img src="images/react-native.png"
-
-          </li>
+            <div class="row justify-content-center">
+              <div id="main-photo">
+                <img src="images/creeper.png" alt="Prahlad Ranjit">
+              </div>
+            </div>
+              
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="description">
+                  <p>I'm on a journey to learn the spells to manipulate the foundation of the modern world, computers.</p>
+                  <p>I want to make complicated things simple and easy to understand for everyone.</p>
+                </div>
+              </div>  
+            </div>  
+          </div>
           
-          <li>
-            <a>fwefew</a>
-          </li>
-          <li>
-            <a>fwefew</a>
-          </li>
-          <li>
-            <a>fwefew</a>
-          </li>
-        </ul>
-        
-      </section
+          <div class="row">
+            <div class="background"> 
+              <div class="sky">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+              <div class="sky">
+                <div class="star1"></div>
+                <div class="star1"></div>
+                <div class="star1"></div>
+                <div class="star1"></div>
+                <div class="star1"></div>
+                <div class="star1"></div>
+                <div class="star1"></div>
+                <div class="star1"></div>
+                <div class="star1"></div>
+              </div>
+            </div>  
+          </div>
 
-      <section class="category-section" id="education">
-        <header class="category-header">
-          <h1 class="category-title">
-            Education
-          </h1>
-          <br>
-          <hr>
-          <br>
-          <p class="category-description">
-            Things I can do to some degree of success.
-          </p>
-        </header
-
-        <ul class="category-preview">
-          <li>
-            <a>fwefew</a>
-          </li>
-          <li>
-            <a>fwefew</a>
-          </li>
-          <li>
-            <a>fwefew</a>
-          </li>
-        </ul>
-        
-      </section
-
-      <section class="category-section" id="skills">
-        <header class="category-header">
-          <h1 class="category-title">
-            "Skills"
-          </h1>
-          <br>
-          <hr>
-          <br>
-          <p class="category-description">
-            Things I can do to some degree of success.
-          </p>
-        </header
-
-        <ul class="category-preview">
-          <li>
-            <a>fwefew</a>
-          </li>
-          <li>
-            <a>fwefew</a>
-          </li>
-          <li>
-            <a>fwefew</a>
-          </li>
-        </ul>
-        
-      </section>
-    </div> 
-
-  </div>
-   
-  
-
-
-
-
-    
-
-        <hr>
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-          <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-          <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
-        </div>
-      
-      
-      <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/">Twitter</a>
-        <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-        <p>© Name Surname.</p>
+    <div class="intro">
+      <div class="intro-text">
+        <h1>PRAHLAD</h1>
+        <hr class="rule">
+        <h1> RANJIT</h1>
       </div>
-      
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </div>
+         
+            
+              
+          <div class="row category justify-content-center">
+            <div class="col-12">
+              <a class="skills-align" id="skills">skills</a>
+              <section class="category-section">
+                <header class="category-header">
+                  <h1 class="category-title">
+                    Skills
+                  </h1>
+                  <br>
+                  <hr>
+                  <br>
+                  <p class="category-description">
+                    Things I can do to some degree of success.
+                  </p>
+                  <br>
+                  <br>
+                </header>
+
+                <div class="row">
+                  <div class="col-6">
+                    <h1 class="category-item d-flex justify-content-end">
+                      Coding:
+                    </h1>
+                  </div>
+                  <div class="col-6 logos">
+                      <img src="images/python.png">
+                      <img src="images/java.png">
+                  </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6">
+                    <h1 class="category-item d-flex justify-content-end">
+                      Web Design:
+                    </h1>
+                  </div>
+
+                  <div class="col-6 logos">
+                    <img src="images/html-5.png">
+                    <img src="images/css3.png">
+                    <img src="images/bootstrap.png">
+                    <img src="images/javascript.png"> 
+                    <img src="images/node-js.png">
+                    <img src="images/jquery.png">
+                    <img src="images/rest-api.png">
+                    <img src="images/react-native.png">
+                  </div> 
+
+                </div>
+                  
+                </div>
+                    
+                  
+                    
+                  
+                  
+                  
+                    <h2 class="category-item"></h2>
+              
+                  
+                    <h2 class="category-item"></h2>
+                  
+                  
+                    <h2 class="category-item"></h2>
+                  
+                
+                
+              </section>
+
+              <section class="category-section" id="education">
+                <header class="category-header">
+                  <h1 class="category-title">
+                    Education
+                  </h1>
+                  <br>
+                  <hr>
+                  <br>
+                  <p class="category-description">
+                    Things I can do to some degree of success.
+                  </p>
+                </header
+
+                <ul class="category-preview">
+                  <li>
+                    <h2 class="category-item"></h2>
+                  </li>
+                  <li>
+                    <h2 class="category-item"></h2>
+                  </li>
+                  <li>
+                    <h2 class="category-item"></h2>
+                  </li>
+                </ul>
+                
+              </section
+
+              <section class="category-section" id="skills">
+                <header class="category-header">
+                  <h1 class="category-title">
+                    "Skills"
+                  </h1>
+                  <br>
+                  <hr>
+                  <br>
+                  <p class="category-description">
+                    Things I can do to some degree of success.
+                  </p>
+                </header
+
+                <ul class="category-preview">
+                  <li>
+                    <h2 class="category-item"></h2>
+                  </li>
+                  <li>
+                    <h2 class="category-item"></h2>
+                  </li>
+                  <li>
+                    <h2 class="category-item"></h2>
+                  </li>
+                </ul>
+                
+              </section>
+            </div> 
+
+          </div>
+          
+          
+
+
+
+
+            
+
+                <hr>
+                <div class="contact-me">
+                  <h2>Get In Touch</h2>
+                  <h3>Lorem ipsum dolor sit amet, non elit.</h3>
+                  <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
+                  <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+                </div>
+              
+              
+              <div class="bottom-container">
+                <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+                <a class="footer-link" href="https://twitter.com/">Twitter</a>
+                <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+                <p>© Name Surname.</p>
+              </div>
+
+            </div>
+          </div>
+        
+      </div>              
+    </div>
+  <!-- JavaScript Bundle with Popper -->
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="index.js"charset="UTF-8"></script>
+
+<!-- <script>
+  $.each( $('*'), function() { 
+   if( $(this).width() > $('body').width()) {
+   console.log("Wide Element: ", $(this), "Width: ",   
+                              $(this).width()); 
+   } 
+}); -->
+</script>
 </body>
 </html>
