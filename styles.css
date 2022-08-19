@@ -208,7 +208,7 @@ h1 .box {
   .tagline {
     font-size: 2rem;
     font-weight: 500;
-    width: 55%;
+    width: auto;
     margin: 0 auto;
     margin-bottom: 2.5rem;
   }
@@ -217,7 +217,7 @@ h1 .box {
     text-align: center;
     position: relative;
     margin: 60px auto;
-    width: 60%;
+    width: auto;
     font-size: 1.5rem;
     top: 0px;
   }
@@ -256,6 +256,10 @@ h1 .box {
 
 li {
   font-size: 2rem;
+}
+
+#soon {
+  font-size: 3rem;
 }
 
 .category {
@@ -340,7 +344,7 @@ img.web-logo {
   
   .category-description {
     font-size: 1rem;
-    font-weight: 10;
+    font-weight: lighter;
     width: 50%;
     margin: 30px auto;
   }
@@ -351,9 +355,10 @@ img.web-logo {
 
   .category-points {
     font-size: 1rem;
-    font-weight: 70;
+    font-weight: lighter;
     line-height: 3rem;
     margin-top: 40px;
+    margin-right: 25px;
   }
 
 }
