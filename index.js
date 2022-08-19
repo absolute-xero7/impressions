@@ -16,7 +16,7 @@ intro
 gsap.registerPlugin(ScrollTrigger);
 
 
-gsap.from(".logos img", {scrollTrigger: ".logos img", x: 1000, duration: 1, ease: "power1.out", stagger: 0.2});
+gsap.from(".logos img", {scrollTrigger: ".logos img", x: 1000, duration: 1, ease: "power1.out", stagger: 0.1});
 gsap.from(".category-points li", {scrollTrigger: ".category-points li", x: -1000, duration: 1, ease: "power1.out", stagger: 0.2});
 gsap.from(".about", {scrollTrigger: ".about", x: -1000, duration: 1, ease: "power1.out", stagger: 0.3});
 gsap.to(".contacts img", {scrollTrigger: ".contacts img", rotation:"360_cw", duration: 1, stagger: 0.3});

@@ -24,6 +24,7 @@ div.row {
 .navbar-custom {
   /* background-color: #685E95; */
   background-color: #4D4C7D;
+ 
   
 }
 
@@ -77,13 +78,6 @@ div.row {
   border-radius: 5px;
 }
 
-
-  
-/*++++++++++++++++++++++++++Small Devices++++++++++++++++++++++++++++++*/
-
-@media (min-width: 544px) {  
-  
-}
 
 
 /*---------------------------------------INTRO-SCREEN----------------------------------*/
@@ -206,13 +200,13 @@ h1 .box {
 
 @media (min-width: 300px) {  
   .name {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 100;
     margin-bottom: 20px;
   }
 
   .tagline {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     width: 55%;
     margin: 0 auto;
@@ -222,7 +216,7 @@ h1 .box {
   .description {
     text-align: center;
     position: relative;
-    margin: 0 auto;
+    margin: 60px auto;
     width: 60%;
     font-size: 1.5rem;
     top: 0px;
@@ -270,7 +264,7 @@ li {
   overflow: hidden;
 }
 .category-item {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   font-size: 3.5rem;
 }
 
@@ -295,7 +289,8 @@ ul.category-preview {
 
 
 .logos {
-  text-align: left;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .skills-align {
@@ -344,10 +339,21 @@ img.web-logo {
   }
   
   .category-description {
-    font-size: 1.3rem;
-    font-weight: 100;
+    font-size: 1rem;
+    font-weight: 10;
     width: 50%;
-    margin: 0 auto;
+    margin: 30px auto;
+  }
+
+  .category-item {
+    font-size: 3rem;
+  }
+
+  .category-points {
+    font-size: 1rem;
+    font-weight: 70;
+    line-height: 3rem;
+    margin-top: 40px;
   }
 
 }
@@ -405,6 +411,40 @@ img.contact-img {
   width: 70px;
   height: 70px;
   margin: 7rem auto;
+}
+
+
+/*++++++++++++++++++++++++++Small Devices++++++++++++++++++++++++++++++*/
+
+@media (min-width: 300px) {
+  
+  .about {
+    text-align: center;
+    display: flex;
+    width: auto;
+    line-height: 3rem;
+    font-weight: bold;
+  }
+  
+  .contact-item {
+    font-size: 1rem;
+  }
+
+  img.contact-img {
+    width: 70px;
+    height: 70px;
+    margin: 1rem auto;
+  }
+
+  span.mail {
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-left: 1rem;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+  }
 }
 /*---------------------------------BACKGROUND-------------------------------------------*/
 
