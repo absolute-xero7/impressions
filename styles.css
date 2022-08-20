@@ -5,12 +5,14 @@ body {
   margin-left: 0;
   margin-right: 0;
   font-family: 'Josefin Sans', sans-serif;
+  
 }
 
 div.row {
   margin-right: 0;
   margin-left: 0;
 }
+
 
 
 /*----------------------------------------NAVBAR-----------------------------------------*/
@@ -110,7 +112,7 @@ h1 .box {
 .intro-text {
   color: #AEDBCE;
   font-size: 5em;
-  position: relative;
+  position: absolute;
   z-index: 2;
 }
 
@@ -283,6 +285,7 @@ li {
   font-size: 1.6vw;
   font-weight: 100;
   font-family: 'Montserrat', sans-serif;
+  padding-left: 90px;
 }
 
 ul.category-preview {
