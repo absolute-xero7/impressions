@@ -191,7 +191,7 @@ h1 .box {
   .description {
     text-align: center;
     position: relative;
-    width: 30%;
+    width: 70%;
     margin: 0 auto;
     font-size: 1.5vw;
     top: 200px;
@@ -202,8 +202,9 @@ h1 .box {
 
 @media (min-width: 300px) {  
   .name {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 100;
+    margin-top: 6px;
     margin-bottom: 20px;
   }
 
@@ -219,8 +220,8 @@ h1 .box {
     text-align: center;
     position: relative;
     margin: 60px auto;
-    width: auto;
-    font-size: 1.5rem;
+    width: 70%;
+    font-size: 1rem;
     top: 0px;
   }
 
@@ -230,15 +231,16 @@ h1 .box {
 
 @media (min-width: 992px) {
   .name {
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 100;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 50px;
+    margin-top: 6px;
+    margin-bottom: 5px;
   }
 
   .tagline {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 0px;
     position: relative;
     top: 20px;
@@ -247,22 +249,70 @@ h1 .box {
   .description {
     text-align: center;
     position: relative;
-    margin: 0 auto;
-    width: 30%;
-    font-size: 2rem;
-    top: 100px;
+    margin: 60px auto;
+    width: 80%;
+    font-size: 1.5rem;
+    top: 0px;
   }
 }
 
-/*-----------------------------------CATEGORIES-------------------------------------------*/
+/*-----------------------------------PROJECTS-------------------------------------------*/
 
-li {
-  font-size: 2rem;
+/* Project Cards */
+.project-card {
+  background-color: #4D4C7D;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
 }
 
-#soon {
-  font-size: 3rem;
+.project-card img {
+  border-radius: 10px;
+  width: 90%;
+  
 }
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.project-points {
+  list-style: disc;
+  padding-left: 40px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.project-details {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.project-languages {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Adjust border radius as needed */
+}
+
+
+
+.project-points li {
+  font-size: 1em; /* Adjust the font size as needed */
+  font-weight: lighter;
+  /* color: #888; */
+  margin-bottom: 5px; /* Adjust the margin bottom as needed */
+}
+
+
 
 .category {
   margin-top: -35vh;
@@ -278,7 +328,7 @@ li {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 5vw;
   font-weight: 400;
-  
+  margin-top: 7rem;
 }
 
 .category-description {
@@ -341,7 +391,7 @@ img.web-logo {
     
     font-size: 4rem;
     font-weight: 400;
-    margin-top: 6rem;
+    margin-top: 7rem;
   }
   
   .category-description {
@@ -357,7 +407,7 @@ img.web-logo {
 
   .category-points {
     font-size: 1rem;
-    font-weight: lighter;
+    font-weight: 20;
     line-height: 3rem;
     margin-top: 40px;
     margin-right: 25px;
@@ -383,6 +433,16 @@ img.web-logo {
     font-weight: 100;
     margin: 5rem auto;
   }
+}
+
+
+/* ------------------------------------------------------RESUME---------------------------------------------------------- */
+
+.resume-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 80px;
 }
 
 
@@ -453,6 +513,49 @@ img.contact-img {
     
   }
 }
+
+/* -------------------------------------------------------FOOTER---------------------------------------------------------- */
+footer {
+  background-color: #333;
+  display: flex;
+  width: 100%;
+  color: white;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+/* .footer-contents {
+  margin: 10px auto;
+} */
+
+.footer-box {
+  text-align: left;
+}
+
+.footer-text {
+  margin: 0px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.footer-section {
+  margin-right: 5px;
+}
+
+.footer-icons a {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+
 /*---------------------------------BACKGROUND-------------------------------------------*/
 
 
@@ -462,8 +565,8 @@ img.contact-img {
   opacity: 0.5;
   display: -webkit-box;
   display: flex;
-  position: relative;
-  bottom: 800px;
+  position: fixed;
+  bottom: 100px;
   z-index: -1;
 }
 
@@ -925,3 +1028,4 @@ for shooting effect */
     transform: translateX(270px);
   }
 }
+
