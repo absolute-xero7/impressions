@@ -1,11 +1,17 @@
 body {
   background-color: #363062;
+  display: flex;
+  flex-direction: column;
   color: white;
   text-align: center;
   margin-left: 0;
   margin-right: 0;
   font-family: 'Josefin Sans', sans-serif;
-  
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 div.row {
@@ -26,8 +32,8 @@ div.row {
 .navbar-custom {
   /* background-color: #685E95; */
   background-color: #4D4C7D;
- 
-  
+
+
 }
 
 /* change the brand and text color */
@@ -56,31 +62,35 @@ div.row {
   border-radius: 5px;
 }
 
-.navbar-nav li > a:focus {
+.navbar-nav li>a:focus {
   background-color: #AEDBCE;
   color: #363062;
   border-radius: 5px;
 }
 
-.navbar-nav li.active > a {
-	background-color: #000000;
-	color: #fff;
+.navbar-nav li.active>a {
+  background-color: #000000;
+  color: #fff;
   border-radius: 5px;
 }
 
 .navbar {
-  -webkit-box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.75);
 }
 
-.navbar-nav > li{
-  padding-left:5vw;
-  padding-right:5vw;
+.navbar-nav>li {
+  padding-left: 5vw;
+  padding-right: 5vw;
   border-radius: 5px;
 }
 
-
+.nav-link {
+  font-size: 1.4rem; 
+  margin-top: 5px; 
+  /* margin-bottom: 5px;  */
+}
 
 /*---------------------------------------INTRO-SCREEN----------------------------------*/
 
@@ -131,24 +141,25 @@ h1 .box {
 
 /*-------------------------------------HOME--------------------------------------------*/
 
-  .home {
-    justify-content: center;
-    
-    margin-bottom: 40px;
-  }
+.home {
+  justify-content: center;
 
-  .hide {
-    position: relative;
-    visibility: hidden;
-  }
-  .home-title {
-    text-align: center;
-    position: relative;
-    top: 50px;
-    margin-bottom: 100px;
-  }
+  margin-bottom: 40px;
+}
 
-  /* #main-photo {
+.hide {
+  position: relative;
+  visibility: hidden;
+}
+
+.home-title {
+  text-align: center;
+  position: relative;
+  top: 50px;
+  margin-bottom: 100px;
+}
+
+/* #main-photo {
     width: 110px;
     height: 110px;
     text-align: center;
@@ -157,54 +168,57 @@ h1 .box {
     margin-bottom: 10px;
   } */
 
-  #main-photo {
-    /* position: relative; */
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  #main-photo img {
-    width: 100%; height: auto;
-  }
+#main-photo {
+  /* position: relative; */
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#main-photo img {
+  width: 100%;
+  height: auto;
+}
 
 
-  .name {
-    font-size: 8rem;
-    font-weight: 90;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 0px;
-    position: relative;
-    bottom: 50px;
-  }
+.name {
+  font-size: 8rem;
+  font-weight: 90;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0px;
+  position: relative;
+  bottom: 50px;
+  margin-top: 50px;
+}
 
-  .tagline {
-    font-size: 2.3vw;
-    font-weight: 500;
-    margin-top: 0px;
-    position: relative;
-    top: 20px;
-  }
+.tagline {
+  font-size: 2.3vw;
+  font-weight: 500;
+  margin-top: 0px;
+  position: relative;
+  top: 20px;
+}
 
-  .description {
-    text-align: center;
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-    font-size: 1.5vw;
-    top: 200px;
-  }
+.description {
+  text-align: center;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.5vw;
+  top: 200px;
+}
 
-  
+
 /*++++++++++++++++++++++++++Small Devices++++++++++++++++++++++++++++++*/
 
-@media (min-width: 300px) {  
+@media (min-width: 300px) {
   .name {
     font-size: 4rem;
     font-weight: 100;
-    margin-top: 6px;
+    margin-top: 80px;
     margin-bottom: 20px;
   }
 
@@ -220,7 +234,7 @@ h1 .box {
     text-align: center;
     position: relative;
     margin: 60px auto;
-    width: 70%;
+    width: 50%;
     font-size: 1rem;
     top: 0px;
   }
@@ -234,7 +248,7 @@ h1 .box {
     font-size: 6rem;
     font-weight: 100;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 6px;
+    margin-top: 80px;
     margin-bottom: 5px;
   }
 
@@ -250,7 +264,7 @@ h1 .box {
     text-align: center;
     position: relative;
     margin: 60px auto;
-    width: 80%;
+    width: 50%;
     font-size: 1.5rem;
     top: 0px;
   }
@@ -270,7 +284,7 @@ h1 .box {
 .project-card img {
   border-radius: 10px;
   width: 90%;
-  
+
 }
 
 .project-title {
@@ -300,16 +314,19 @@ h1 .box {
 .project-image {
   width: 100%;
   height: auto;
-  border-radius: 10px; /* Adjust border radius as needed */
+  border-radius: 10px;
+  /* Adjust border radius as needed */
 }
 
 
 
 .project-points li {
-  font-size: 1em; /* Adjust the font size as needed */
+  font-size: 1em;
+  /* Adjust the font size as needed */
   font-weight: lighter;
   /* color: #888; */
-  margin-bottom: 5px; /* Adjust the margin bottom as needed */
+  margin-bottom: 5px;
+  /* Adjust the margin bottom as needed */
 }
 
 
@@ -319,13 +336,14 @@ h1 .box {
   text-align: center;
   overflow: hidden;
 }
+
 .category-item {
   margin-bottom: 2rem;
   font-size: 3.5rem;
 }
 
 .category-title {
-  font-family: 'Josefin Sans', sans-serif;
+  /* font-family: 'Josefin Sans', sans-serif; */
   font-size: 5vw;
   font-weight: 400;
   margin-top: 7rem;
@@ -382,18 +400,18 @@ img.web-logo {
 
 /*++++++++++++++++++++++++++Small Devices++++++++++++++++++++++++++++++*/
 
-@media (min-width: 300px) {  
+@media (min-width: 300px) {
   .category {
     margin-top: -36rem;
   }
 
   .category-title {
-    
+
     font-size: 4rem;
     font-weight: 400;
     margin-top: 7rem;
   }
-  
+
   .category-description {
     font-size: 1rem;
     font-weight: lighter;
@@ -423,11 +441,11 @@ img.web-logo {
   }
 
   .category-title {
-    
+
     font-size: 5rem;
     font-weight: 400;
   }
-  
+
   .category-description {
     font-size: 1.6vw;
     font-weight: 100;
@@ -435,14 +453,112 @@ img.web-logo {
   }
 }
 
+/*----------------------------------------------CERTIFICATIONS-------------------------------------------------------------------*/
+
+/* Customize these styles to match your design */
+.certification-section {
+  margin-top: 40px;
+  /* Adjust spacing as needed */
+}
+
+.section-title {
+  font-size: 3.2rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.cert-top {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.certification-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cert-image {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.cert-title {
+  font-weight: 200;
+}
+
+.cert-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.cert-link {
+  display: block;
+  padding: 8px 16px;
+  background-color: #c2c0cf;
+  color: #363062;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.cert-link:hover {
+  background-color: #47456e;
+}
+
+/*----------------------------------------------SKILLS-------------------------------------------------------------------*/
+
+.skill-top {
+  font-size: 3.3rem;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.skills-list {
+  margin-bottom: 20px;
+}
+
+.skill-card {
+  background-color: #4D4C7D;
+  color: white;
+  padding: 0px;
+  border-radius: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.skill-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.skill-text {
+  font-size: 13px;
+  font-weight: lighter;
+}
 
 /* ------------------------------------------------------RESUME---------------------------------------------------------- */
 
 .resume-title {
   font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-  margin-top: 80px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 90px;
 }
 
 
@@ -466,13 +582,12 @@ span.mail {
   position: relative;
   top: 0.4rem;
 }
-span.mail a:hover a:focus{
+
+span.mail a:hover a:focus {
   color: #AEDBCE;
 }
 
-.contacts {
-  
-}
+.contacts {}
 
 img.contact-img {
   width: 70px;
@@ -484,7 +599,7 @@ img.contact-img {
 /*++++++++++++++++++++++++++Small Devices++++++++++++++++++++++++++++++*/
 
 @media (min-width: 300px) {
-  
+
   .about {
     text-align: center;
     display: flex;
@@ -492,7 +607,7 @@ img.contact-img {
     line-height: 3rem;
     font-weight: bold;
   }
-  
+
   .contact-item {
     font-size: 1rem;
   }
@@ -510,7 +625,7 @@ img.contact-img {
     text-decoration: none;
     color: white;
     position: relative;
-    
+
   }
 }
 
@@ -522,8 +637,8 @@ footer {
   color: white;
   height: 4rem;
   align-items: center;
-  justify-content: center;
-  margin: auto;
+  justify-content: flex-start;
+  margin-top: auto;
 }
 
 /* .footer-contents {
@@ -578,7 +693,7 @@ footer {
   -webkit-transform: rotateZ(30deg);
   transform: rotateZ(30deg);
 }
-  
+
 /* Here we are making roundabout balls  */
 .star {
   position: absolute;
@@ -586,18 +701,18 @@ footer {
   top: 50%;
   height: 2px;
   border-radius: 885px;
-  background: linear-gradient(-45deg, 
-    #eef0f5, rgba(0, 0, 255, 0));
-  
+  background: linear-gradient(-45deg,
+      #eef0f5, rgba(0, 0, 255, 0));
+
   -webkit-filter: drop-shadow(0 0 6px #eef1f8);
   filter: drop-shadow(0 0 6px #d7dff0);
   -webkit-animation: tail 3000ms ease-in-out infinite,
     shooting 3000ms ease-in-out infinite;
   animation: tail 3000ms ease-in-out infinite,
     shooting 3000ms ease-in-out infinite;
-    background-color: aqua;
+  background-color: aqua;
 }
-  
+
 /* Here we add before and after effect to star */
 .star::before,
 .star::after {
@@ -606,23 +721,22 @@ footer {
   top: calc(50% - 1px);
   right: 0;
   height: 2px;
-  background: linear-gradient(
-    -45deg,
-    rgba(0, 0, 255, 0),
-    #eaeef8,
-    rgba(0, 0, 255, 0)
-  );
+  background: linear-gradient(-45deg,
+      rgba(0, 0, 255, 0),
+      #eaeef8,
+      rgba(0, 0, 255, 0));
   -webkit-transform: translateX(50%) rotateZ(45deg);
   transform: translateX(50%) rotateZ(45deg);
   border-radius: 100%;
   -webkit-animation: shining 3000ms ease-in-out infinite;
   animation: shining 3000ms ease-in-out infinite;
 }
+
 .star::after {
   -webkit-transform: translateX(50%) rotateZ(-45deg);
   transform: translateX(50%) rotateZ(-45deg);
 }
-  
+
 /* Here we are adding location of each 
    nth-child, animations, delays, and 
    before and after effects to each 
@@ -633,134 +747,155 @@ footer {
   -webkit-animation-delay: 1000ms;
   animation-delay: 1000ms;
 }
+
 .star:nth-child(1)::before,
 .star:nth-child(1)::after {
   -webkit-animation-delay: 1000ms;
   animation-delay: 1000ms;
 }
+
 .star:nth-child(2) {
   top: calc(50% - -4px);
   left: calc(50% - -30px);
   -webkit-animation-delay: 5000ms;
   animation-delay: 5000ms;
 }
+
 .star:nth-child(2)::before,
 .star:nth-child(2)::after {
   -webkit-animation-delay: 5000ms;
   animation-delay: 5000ms;
 }
+
 .star:nth-child(3) {
   top: calc(50% - 240px);
   left: calc(50% - -30px);
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
+
 .star:nth-child(3)::before,
 .star:nth-child(3)::after {
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
+
 .star:nth-child(4) {
   top: calc(50% - -29px);
   left: calc(50% - 113px);
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
+
 .star:nth-child(4)::before,
 .star:nth-child(4)::after {
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
+
 .star:nth-child(5) {
   top: calc(50% - 90px);
   left: calc(50% - -110px);
   -webkit-animation-delay: 3000ms;
   animation-delay: 3000ms;
 }
+
 .star:nth-child(5)::before,
 .star:nth-child(5)::after {
   -webkit-animation-delay: 3000ms;
   animation-delay: 3000ms;
 }
+
 .star:nth-child(6) {
   top: calc(50% - -108px);
   left: calc(50% - 160px);
   -webkit-animation-delay: 3000ms;
   animation-delay: 3000ms;
 }
+
 .star:nth-child(6)::before,
 .star:nth-child(6)::after {
   -webkit-animation-delay: 3000ms;
   animation-delay: 3000ms;
 }
+
 .star:nth-child(7) {
   top: calc(50% - 52px);
   left: calc(50% - 72px);
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
+
 .star:nth-child(7)::before,
 .star:nth-child(7)::after {
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
-  
+
 /* This code will help to generate 
 effect in tail of star */
 @keyframes tail {
   0% {
     width: 0;
   }
+
   30% {
     width: 100px;
   }
+
   100% {
     width: 0;
   }
 }
-  
+
 /* This code will generate shining 
 effect in head of star */
 @keyframes shining {
   0% {
     width: 0;
   }
+
   50% {
     width: 30px;
   }
+
   100% {
     width: 0;
   }
 }
-  
+
 /* Here we are adding webkit-animation 
 to head of star for shining */
 @-webkit-keyframes shining {
   0% {
     width: 0;
   }
+
   50% {
     width: 30px;
   }
+
   100% {
     width: 0;
   }
 }
-  
+
 /* Here we are adding webkit-animation 
 to tail of star */
 @-webkit-keyframes tail {
   0% {
     width: 0;
   }
+
   30% {
     width: 100px;
   }
+
   100% {
     width: 0;
   }
 }
-  
+
 /* Here we are adding webkit-animation 
 for shooting effect */
 @-webkit-keyframes shooting {
@@ -768,18 +903,20 @@ for shooting effect */
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translateX(270px);
     transform: translateX(270px);
   }
 }
-  
+
 /* Here we make shooting effect */
 @keyframes shooting {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translateX(270px);
     transform: translateX(270px);
@@ -796,18 +933,18 @@ for shooting effect */
   top: 50%;
   height: 2px;
   border-radius: 885px;
-  background: linear-gradient(-45deg, 
-    #eef0f5, rgba(0, 0, 255, 0));
-  
+  background: linear-gradient(-45deg,
+      #eef0f5, rgba(0, 0, 255, 0));
+
   -webkit-filter: drop-shadow(0 0 6px #eef1f8);
   filter: drop-shadow(0 0 6px #d7dff0);
   -webkit-animation: tail 3000ms ease-in-out infinite,
     shooting 3000ms ease-in-out infinite;
   animation: tail 3000ms ease-in-out infinite,
     shooting 3000ms ease-in-out infinite;
-    background-color: aqua;
+  background-color: aqua;
 }
-  
+
 /* Here we add before and after effect to star1 */
 .star1::before,
 .star1::after {
@@ -816,23 +953,22 @@ for shooting effect */
   top: calc(50% - 1px);
   right: 0;
   height: 2px;
-  background: linear-gradient(
-    -45deg,
-    rgba(0, 0, 255, 0),
-    #eaeef8,
-    rgba(0, 0, 255, 0)
-  );
+  background: linear-gradient(-45deg,
+      rgba(0, 0, 255, 0),
+      #eaeef8,
+      rgba(0, 0, 255, 0));
   -webkit-transform: translateX(50%) rotateZ(45deg);
   transform: translateX(50%) rotateZ(45deg);
   border-radius: 100%;
   -webkit-animation: shining 3000ms ease-in-out infinite;
   animation: shining 3000ms ease-in-out infinite;
 }
+
 .star1::after {
   -webkit-transform: translateX(50%) rotateZ(-45deg);
   transform: translateX(50%) rotateZ(-45deg);
 }
-  
+
 /* Here we are adding location of each 
    nth-child, animations, delays, and 
    before and after effects to each 
@@ -843,167 +979,194 @@ for shooting effect */
   -webkit-animation-delay: 2500ms;
   animation-delay: 2500ms;
 }
+
 .star1:nth-child(1)::before,
 .star1:nth-child(1)::after {
   -webkit-animation-delay: 2500ms;
   animation-delay: 2500ms;
 }
+
 .star1:nth-child(2) {
   top: calc(50% - -110px);
   left: calc(50% - 1000px);
   -webkit-animation-delay: 5000ms;
   animation-delay: 5000ms;
 }
+
 .star1:nth-child(2)::before,
 .star1:nth-child(2)::after {
   -webkit-animation-delay: 5000ms;
   animation-delay: 5000ms;
 }
+
 .star1:nth-child(3) {
   top: calc(50% - -80px);
   left: calc(50% - 700px);
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
+
 .star1:nth-child(3)::before,
 .star1:nth-child(3)::after {
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
+
 .star1:nth-child(4) {
   top: calc(50% - 60px);
   left: calc(50% - 600px);
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
+
 .star1:nth-child(4)::before,
 .star1:nth-child(4)::after {
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
+
 .star1:nth-child(5) {
   top: calc(50% - 146px);
   left: calc(50% - 112px);
   -webkit-animation-delay: 3000ms;
   animation-delay: 3000ms;
 }
+
 .star1:nth-child(5)::before,
 .star1:nth-child(5)::after {
   -webkit-animation-delay: 3000ms;
   animation-delay: 3000ms;
 }
+
 .star1:nth-child(6) {
   top: calc(50% - -90px);
   left: calc(50% - 160px);
   -webkit-animation-delay: 3600ms;
   animation-delay: 3600ms;
 }
+
 .star1:nth-child(6)::before,
 .star1:nth-child(6)::after {
   -webkit-animation-delay: 3600ms;
   animation-delay: 3600ms;
 }
+
 .star1:nth-child(7) {
   top: calc(50% - 52px);
   left: calc(50% - 72px);
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
+
 .star1:nth-child(7)::before,
 .star1:nth-child(7)::after {
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
+
 .star1:nth-child(8) {
   top: calc(50% - -150px);
   left: calc(50% - 200px);
   -webkit-animation-delay: 4000ms;
   animation-delay: 4000ms;
 }
+
 .star1:nth-child(8)::before,
 .star1:nth-child(8)::after {
   -webkit-animation-delay: 4000ms;
   animation-delay: 4000ms;
 }
+
 .star1:nth-child(9) {
   top: calc(50% - -43px);
   left: calc(50% - 37px);
   -webkit-animation-delay: 5000ms;
   animation-delay: 5000ms;
 }
+
 .star1:nth-child(9)::before,
 .star1:nth-child(9)::after {
   -webkit-animation-delay: 5000ms;
   animation-delay: 5000ms;
 }
+
 .star1:nth-child(10) {
   top: calc(50% - -40px);
   left: calc(50% - 222px);
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
+
 .star1:nth-child(10)::before,
 .star1:nth-child(10)::after {
   -webkit-animation-delay: 7000ms;
   animation-delay: 7000ms;
 }
-  
+
 /* This code will help to generate 
 effect in tail of star1 */
 @keyframes tail {
   0% {
     width: 0;
   }
+
   30% {
     width: 100px;
   }
+
   100% {
     width: 0;
   }
 }
-  
+
 /* This code will generate shining 
 effect in head of star1 */
 @keyframes shining {
   0% {
     width: 0;
   }
+
   50% {
     width: 30px;
   }
+
   100% {
     width: 0;
   }
 }
-  
+
 /* Here we are adding webkit-animation 
 to head of star1 for shining */
 @-webkit-keyframes shining {
   0% {
     width: 0;
   }
+
   50% {
     width: 30px;
   }
+
   100% {
     width: 0;
   }
 }
-  
+
 /* Here we are adding webkit-animation 
 to tail of star1 */
 @-webkit-keyframes tail {
   0% {
     width: 0;
   }
+
   30% {
     width: 100px;
   }
+
   100% {
     width: 0;
   }
 }
-  
+
 /* Here we are adding webkit-animation 
 for shooting effect */
 @-webkit-keyframes shooting {
@@ -1011,21 +1174,22 @@ for shooting effect */
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-  100% {
-    -webkit-transform: translateX(270px);
-    transform: translateX(270px);
-  }
-}
-  
-/* Here we make shooting effect */
-@keyframes shooting {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
+
   100% {
     -webkit-transform: translateX(270px);
     transform: translateX(270px);
   }
 }
 
+/* Here we make shooting effect */
+@keyframes shooting {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(270px);
+    transform: translateX(270px);
+  }
+}
